@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.4;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/fabian-quintero-UWQP2mh5YJI-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+form {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 40px 20px;
+}
+
+form div {
+  min-width: 300px;
+  position: relative;
+}
+
+form div * {
+  display: block;
+}
+
+form div i {
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  display: none !important;
+}
+
+form div .wrong {
+  border: 1px solid crimson;
+}
+
+form div .wrong ~ .fa-exclamation-circle {
+  color: crimson;
+  display: block !important;
+}
+
+form div .wrong ~ .wrongText {
+  display: block;
+  color: crimson;
+}
+
+form div .wrongText {
+  display: none;
+}
+
+form div .good {
+  border: 1px solid forestgreen;
+}
+
+form div .good ~ .fa-check-circle {
+  color: forestgreen;
+  display: block !important;
+}
+
+form div label, form div input {
+  margin-bottom: 10px;
+}
+
+form div input, form div textarea {
+  padding: 10px 20px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+form div label {
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+form div textarea {
+  resize: none;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+form button {
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: transparent;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  font-size: 16px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+form button span {
+  position: relative;
+  z-index: 2;
+}
+
+form button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 0;
+  background-color: #fff;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+form button:hover {
+  color: #333;
+}
+
+form button:hover:after {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
