@@ -1,9 +1,9 @@
 main {
-    padding: 80px 20px 60px;
+    padding: 80px 20px;
     form {
-        max-width: 800px;
+        max-width: 1200px;
         background-color: #F6F6F6;
-        padding: 40px 20px;
+        padding: 80px;
         margin: 0 auto;
         div {
             min-width: 300px;
@@ -18,7 +18,7 @@ main {
             }
             i {
                 position: absolute;
-                top: 50px;
+                top: 58px;
                 right: 30px;
                 display: none !important;
             }
@@ -30,7 +30,9 @@ main {
                 }
                 &~.wrongText {
                     display: block;
+                    position: absolute;
                     color: crimson;
+                    bottom: -25px;
                 }
             }
             .wrongText {
@@ -45,7 +47,7 @@ main {
             }
     
             label, input {
-                margin-bottom: 10px;
+                margin-bottom: 20px;
                 color: #2F2F2F;
             }
             input, textarea {
@@ -59,24 +61,25 @@ main {
                 // color: #fff;
                 font-weight: 700;
                 font-size: 15px;
+                margin-left: 20px;
             }
             textarea {
                 resize: none;
                 height: 150px;
-                margin-bottom: 20px;
+                margin-bottom: 30px;
             }
         }
         button {
             padding: 10px 20px;
             border: 1px solid deepskyblue;
             background-color: deepskyblue;
-            color: #2F2F2F;
+            color: #fff;
             transition: .3s linear;
             font-size: 16px;
             position: relative;
             width: 100%;
             text-transform: uppercase;
-            font-weight: 700;
+            font-weight: 400;
             cursor: pointer;
             font-family: 'Roboto', sans-serif;;
             span {

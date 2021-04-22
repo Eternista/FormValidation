@@ -1,17 +1,15 @@
 //FOOTER
 
 .footer {
-    padding-bottom: 40px;
+    padding: 40px 0 40px;
     text-align: center;
+    background-color: deepskyblue;
     h2 {
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        padding: 20px 40px;
-        background-color: #fff;
-        border-radius: 30px;
+        color: #fff;
         font-size: 40px;
-        // max-width: 355px;
         margin: 0 auto;
         img {
             width: 60px;
